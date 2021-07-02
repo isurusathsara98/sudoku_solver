@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"> 
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+        <meta name="description" content="Automated sudoku solver - This application uses the sudoku puzzle image and solves the puzzle using algorithX and openCV.">
+        <meta name="keywords" content="sudoku, sudoku solver, auto sudoku solver, automated sudoku solver">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" >
+
+        <!-- Font Awesome CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- External CSS -->
+        <link rel="stylesheet" href="./../static/css/styles.css"> 
+        
+        <!--Favicon-->
+        <link rel="icon" href="./../static/images/favicon.png">
+        
+        <title> Sudoku Insight</title>
+    </head>
+
+    <body>
+        
+        <div class='container'>
+            <div class="container py-5">
+
+                <!-- Sudoku Solver Header Section -->
+                
+                <header class="text-white text-center">
+                    <h2><span>S</span><span>U</span><span>D</span><span>O</span><span>K</span><span>U</span><span>   </span><span>   </span><span>I</span><span>N</span><span>S</span><span>I</span><span>G</span><span>H</span><span>T</span></h2>
+                    
+                </header>
+            
+                <div class="row py-3">
+                    <div class="col-lg-6 mx-auto">
+            
+                        <!-- Upload image input-->
+                        <div class="input-group mb-3 px-2 py-2 rounded-pill md-white d-flex justify-content-center">
+                            <div class="input-group-prepend">
+                                <label for="upload" class="custom-btn btn-5 text-center" style="cursor: pointer;"> <i class="fa fa-cloud-upload mr-2 text-dark"></i><small class="text-uppercase font-weight-bold text-dark ">Upload file</small></label>
+                            </div>
+                            <input class="input-file" id="upload" type="file" onchange="readURL(this);" accept="image/*" name = "user-file">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-3">  
+                    <div class="col-md-6 mx-auto">
+                        <!-- Uploaded image area-->
+                        <p class="font-italic text-black text-center" id="upload-txt"> </p>
+                        <h3><div class="up-image mt-4 " id="up-img"><img id="imageResult" src="" class="img-fluid rounded shadow-sm mx-auto d-block"></div></h3>
+            
+                    </div>
+                 </div>
+                 
+                
+                <div class="row d-flex justify-content-center">
+                    <button  id="submit-btn" class="custom-btn btn-5" style="cursor: no-drop; "  disabled autocomplete="off"> <i class="fa fa-check-circle mr-2 text-dark"></i><small class="text-uppercase font-weight-bold text-dark">Solve</button>
+                    
+                    
+                </div>
+                
+            </div>
+            
+        
+
+        </div>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" ></script>
+        <script src="./../static/js/base.js"></script>
+               
+    </body>
+
+</html>
+
+
